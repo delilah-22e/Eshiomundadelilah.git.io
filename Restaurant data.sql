@@ -77,6 +77,8 @@ FROM (
 
 GROUP BY Time_period
 ORDER BY Total_orders DESC
+ -- Use the code as is to see performance of all times of the day.
+ -- To see just the one time wityh most oprders, execute the line below.
 --LIMIT 1
 
 --What is the total revenue generated from orders on a specific date?
@@ -96,5 +98,6 @@ SELECT FORMAT_DATE('%B', order_date) AS month,SUM(price) AS Total_revenue
      GROUP BY month
 
 Conclusion
-This project provides a comprehensive analysis of restaurant data, helping to uncover valuable insights about menu performance, customer preferences, and peak ordering times. These insights can aid in making informed business decisions to enhance restaurant operations and customer satisfaction.
+This project provides a comprehensive analysis of restaurant data, helping to uncover valuable insights about menu performance, customer preferences, and peak ordering times. 
+These insights can aid in making informed business decisions to enhance restaurant operations and customer satisfaction.
 
